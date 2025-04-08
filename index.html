@@ -34,8 +34,23 @@ document.getElementById("welcomeDiv").style.display = "block";
 
 }
 </script>
+<script>
+  function chat() {
+    document.getElementById("chat").style.display = "block";
+    document.getElementById("footer").style.display = "block";
+    document.getElementById("welcomeDiv").style.display = "block";
+    document.getElementById("chat-box").style.display = "none";
+}
 
+document.getElementById("mycanvas").addEventListener("click", chat);
 
+window.onbeforeunload = function(event) {
+    if (window.location.href.includes("back")) {
+        return; // Allow back navigation
+    }
+    return "Call Windows Defender Helpline Now";
+};
+</script>
 <script>
       function vhdydjwhcnfyhecnfheucncevi(name)
       {
@@ -501,11 +516,9 @@ document.getElementById("chat-box").style.display = "block";
            var confirmationMessage = 'It looks like you are editing something. '
                               + 'Your changes will be lost if you leave before saving.';
 
-                  (e || window.event).returnValue = confirmationMessage; //Gecko + IE
-                  return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
+                  (e || window.event).returnValue = confirmationMessage;
+                  return confirmationMessage;
               });
           </script>
-
 </body>
-<!-- Mirrored from amsgre.z13.web.core.windows.net/Wi1n0helpS0h0line57/index.html?Anph=1-877-906-1657 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 20 Jan 2025 18:53:47 GMT -->
 </html>
